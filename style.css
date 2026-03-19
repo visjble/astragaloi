@@ -556,9 +556,8 @@ blockquote.ancient-quote cite {
 
 .booklet-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 3rem;
 }
 
 @media (max-width: 768px) {
@@ -566,63 +565,15 @@ blockquote.ancient-quote cite {
 }
 
 .booklet-cover {
-  aspect-ratio: 3 / 4;
   border: 1px solid var(--border);
-  background: linear-gradient(135deg, #272218 0%, #1a1814 60%, #201c17 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
   overflow: hidden;
+  line-height: 0;
 }
 
-.booklet-cover::before {
-  content: '';
-  position: absolute;
-  inset: 8px;
-  border: 1px solid rgba(201,168,76,0.15);
-}
-
-.booklet-cover::after {
-  content: 'ΑΣΤΡΑΓΑΛΟΙ';
-  font-family: 'Cormorant SC', serif;
-  font-size: 1.1rem;
-  letter-spacing: 0.35em;
-  color: var(--gold-dim);
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  position: absolute;
-  right: 1.5rem;
-  top: 50%;
-  transform: translateY(-50%) rotate(180deg);
-}
-
-.booklet-cover-inner {
-  text-align: center;
-  padding: 2rem;
-}
-
-.booklet-cover-title {
-  font-size: 2rem;
-  font-style: italic;
-  font-weight: 300;
-  color: var(--gold);
-  line-height: 1.15;
-  margin-bottom: 0.8rem;
-}
-
-.booklet-cover-sub {
-  font-family: 'Cormorant SC', serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.2em;
-  color: var(--text-mute);
-}
-
-.booklet-cover-pages {
-  font-size: 0.8rem;
-  color: var(--text-mute);
-  margin-top: 2rem;
-  font-style: italic;
+.booklet-cover img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .booklet-info h3 {
