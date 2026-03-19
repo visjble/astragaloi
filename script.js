@@ -6,227 +6,227 @@
 
 /* ── Oracle Table ─────────────────────────────────────────
    Keys: sorted values joined by comma, e.g. "1,3,4,6"
-   Faces: κῷος=1, χῖος=3, πλευρός=4, ὕπτιος=6
+   Face values (per Pollux 9.100–101; Eustathius 1289.58):
+     χῖος = 1  |  πρανής = 3  |  ὑπτία = 4  |  κῷος = 6
+   Oracle phrases composed in the style of the attested
+   Lycian and Pisidian inscriptions (Heinevetter 1912; Nollé 2007).
    ──────────────────────────────────────────────────────── */
 const ORACLE = {
   '1,1,1,1': {
-    deity: 'Kronos',
-    title: 'The Titan Withholds',
-    text: 'Four κῷος — the lowest throw. Kronos, lord of time, bids you pause. This is not your moment. Withdraw, reflect in silence, and return to the bones when the stars have moved. What you seek now will be given freely in another season.',
-    omen: 'inauspicious',
+    deity:      'Ἑρμῆς',
+    named:      'κύων — The Dog',
+    greek:      'Κύων σε βάλλει· μένε καὶ μὴ πράσσε νῦν.',
+    text:       'The Dog strikes you. Stay still and act not now.',
+    omen:       'inauspicious',
   },
   '1,1,1,3': {
-    deity: 'Hades',
-    title: 'The Deep Counsels Caution',
-    text: 'The lord of the unseen realm speaks from beneath the earth. Something you pursue conceals a hidden danger. Look below the surface of what is offered. Not all that gleams at the threshold leads inward to light.',
-    omen: 'inauspicious',
+    deity:      'Ἑρμῆς',
+    greek:      'Ἀδύνατα πράσσεις· ἀναμεῖναι καιρόν.',
+    text:       'You press on impossible things. Await the right moment.',
+    omen:       'inauspicious',
   },
   '1,1,1,4': {
-    deity: 'Nemesis',
-    title: 'Measure and Balance',
-    text: 'The goddess of retribution watches with cool eyes. An action taken from pride or haste has already set a wheel in motion. Reconsider before you proceed further. What is given in excess shall be reclaimed with interest.',
-    omen: 'inauspicious',
+    deity:      'Τύχη',
+    greek:      'Μικρὰ κερδαίνεις· ἀλλὰ μὴ ὀλιγώρει.',
+    text:       'Small gain comes to you; yet do not be negligent.',
+    omen:       'mixed',
   },
   '1,1,1,6': {
-    deity: 'Ares',
-    title: 'Conflict Without Resolution',
-    text: 'Three dogs and one belly — conflict is present, but the field is not yet decided. The war god neither promises victory nor defeat. You must prepare carefully and choose your battle wisely. The moment to strike has not yet arrived.',
-    omen: 'mixed',
+    deity:      'Ἑρμῆς',
+    greek:      'Μία δύναμίς σοι· αἱ δὲ ἄλλαι ἀσθενεῖς. ἐπίμεινον.',
+    text:       'One strength is yours; the rest are weak. Wait.',
+    omen:       'mixed',
   },
   '1,1,3,3': {
-    deity: 'Artemis',
-    title: 'The Huntress Moves Alone',
-    text: 'The silver goddess runs through moonlit forest without counsel. Trust your own instincts above all advice you have received. Act alone if you must — the prey is real, the aim is true. Those who wait for permission miss the mark.',
-    omen: 'mixed',
+    deity:      'Τύχη',
+    greek:      'Τὸ ἔργον μέσον ἐστίν· μηδὲν σπεύσης.',
+    text:       'The matter stands middling. Hasten nothing.',
+    omen:       'neutral',
   },
   '1,1,3,4': {
-    deity: 'Demeter',
-    title: 'Tend What Is Already Yours',
-    text: 'Earth-mother sets her hand upon your shoulder. What you have planted will grow, but the season is not yet full. Seek no new fields before this one is harvested. Patience is not weakness here — it is the whole art.',
-    omen: 'neutral',
-  },
-  '1,1,3,6': {
-    deity: 'Demeter',
-    title: 'The Barren Season Passes',
-    text: 'Even the goddess of harvest knew winter. Demeter\'s cycle turns without ceasing: what is lost returns, what is stripped bare will grow green again. The cold in your situation is not permanent. Hold steadily until the thaw.',
-    omen: 'neutral',
+    deity:      'Ἀπόλλων',
+    greek:      'Οὔτε εὐτυχεῖς οὔτε δυστυχεῖς· ἐν σοὶ τὸ τέλος.',
+    text:       'Neither fortunate nor unfortunate; the outcome lies in you.',
+    omen:       'neutral',
   },
   '1,1,4,4': {
-    deity: 'Hephaestus',
-    title: 'Steady Work Is Its Own Oracle',
-    text: 'The forge-god honors those who return to the anvil each day without complaint. Your effort is good and your material is sound — continue building, stone by stone, without distraction. The thing you are making will last.',
-    omen: 'neutral',
+    deity:      'Ἑρμῆς',
+    greek:      'Βεβαία ἡ ὁδός· πορεύου μετὰ φυλακῆς.',
+    text:       'The road is steady. Travel it with watchfulness.',
+    omen:       'neutral',
   },
   '1,1,4,6': {
-    deity: 'Poseidon',
-    title: 'Turbulence Beneath Still Water',
-    text: 'The earth-shaker warns: what appears calm on the surface holds deep movement beneath. Prepare your foundations before the upheaval arrives. Those who build on sand when the sea is quiet are caught without warning when the ground shifts.',
-    omen: 'mixed',
+    deity:      'Ἀπόλλων',
+    greek:      'Μέγα ἀγαθόν σοι πλησιάζει· ἀλλ\u02bc ὄκνει τὸ κακόν.',
+    text:       'A great good draws near you; but beware the ill that accompanies it.',
+    omen:       'mixed',
   },
   '1,1,6,6': {
-    deity: 'Ares',
-    title: 'Two Forces in Tension',
-    text: 'Two powerful currents pull in opposing directions. Ares speaks plainly: delay here is its own defeat. Choose your side with full commitment and advance. A soldier who hesitates at the charge is already lost.',
-    omen: 'mixed',
+    deity:      'Ἀπόλλων',
+    greek:      'Ἡ ἀρχὴ σαθρά· ἐπανόρθωσαι πρὶν ἢ ἄρξῃ.',
+    text:       'The foundation is unsound. Correct it before you begin.',
+    omen:       'inauspicious',
   },
   '1,3,3,3': {
-    deity: 'Poseidon',
-    title: 'The Tide Has Turned',
-    text: 'What once held you in place now loosens its grip. Poseidon\'s tide has shifted in your direction — move with the current rather than against it, and you will cover great distance with less effort than before. The way opens.',
-    omen: 'favorable',
+    deity:      'Γῆ',
+    greek:      'Γαῖα δίδωσίν σοι τοὺς ὡραίους καρπούς· πράσσε τὰ γήινα.',
+    text:       'The Earth gives you ripe fruit. Attend to earthly matters.',
+    omen:       'favorable',
   },
   '1,3,3,4': {
-    deity: 'Athena',
-    title: 'One Flaw Remains',
-    text: 'The owl-eyed goddess surveys your plan carefully. It has real merit and the approach is sound — but there is one overlooked flaw that could undo the whole. Search for it before you commit. Her wisdom is given freely; use it.',
-    omen: 'mixed',
+    deity:      'Ἀπόλλων',
+    greek:      'Ἐρώτα σαφέστερον· ὁ θεὸς ἀκούει.',
+    text:       'Ask more clearly. The god hears.',
+    omen:       'neutral',
   },
   '1,3,3,6': {
-    deity: 'Athena',
-    title: 'Wisdom Before Advance',
-    text: 'Caution and wisdom are paired gifts of the goddess. Study the full terrain of your situation before committing forces. The outcome you desire is reachable — but only by those who see clearly, not those who act on first impulse.',
-    omen: 'neutral',
+    deity:      'Τύχη',
+    greek:      'Ἐναντία σημεῖα· τρισὶν ἡμέραις αὖθις βάλε.',
+    text:       'Contrary signs. Cast again in three days.',
+    omen:       'mixed',
   },
   '1,3,4,4': {
-    deity: 'Athena',
-    title: 'Strategy Bears Fruit',
-    text: 'Skill and strategy converge in your favor. The goddess of clear-eyed craft approves your method. Apply both with precision and the desired outcome draws steadily near. What you have prepared for is exactly what approaches.',
-    omen: 'favorable',
+    deity:      'Ἑρμῆς',
+    greek:      'Πράσσε μετρίως· οὕτω κερδαίνεις μέτρια.',
+    text:       'Proceed moderately. Thus you gain what is moderate.',
+    omen:       'neutral',
   },
   '1,3,4,6': {
-    deity: 'Hermes',
-    title: 'A Message on the Road',
-    text: 'The swift god is already running in your direction. A message, opportunity, or unexpected encounter approaches from the road. The journey you contemplate will yield rewards that cannot yet be foreseen. Begin and trust the motion.',
-    omen: 'favorable',
+    deity:      'Ἀφροδίτη',
+    named:      'Ἀφροδίτη — The Supreme Throw',
+    greek:      'Ἡ θεὰ Ἀφροδίτη σοι εὐμενής· πάντα καλῶς πράξεις.',
+    text:       'The goddess Aphrodite is favorable to you. All will go well.',
+    omen:       'supreme',
   },
   '1,3,6,6': {
-    deity: 'Ares',
-    title: 'Hesitation Is the Enemy',
-    text: 'Ares speaks through iron and fire: the only thing standing between you and your object is your own reluctance to act. The field has been cleared. The hour is now. Advance with full commitment — the gods have already decided.',
-    omen: 'favorable',
+    deity:      'Ἑρμῆς',
+    greek:      'Εὐοδία σοι· ἓν δ\u02bc ἐμπόδιον ὑπολείπεται.',
+    text:       'The road is fair; one obstacle yet remains.',
+    omen:       'favorable',
   },
   '1,4,4,4': {
-    deity: 'Ares',
-    title: 'Courage Alone Suffices',
-    text: 'You do not need more preparation, more resources, or more permission. Courage alone will see you through what stands ahead. The war god\'s blessing is upon the bold. Advance without looking back — the way is already open.',
-    omen: 'favorable',
+    deity:      'Ἀπόλλων',
+    greek:      'Ἀσφαλὴς ἡ πρᾶξις· ἡ καρτερία σε σῴζει.',
+    text:       'The action is safe. Steadfastness preserves you.',
+    omen:       'favorable',
   },
   '1,4,4,6': {
-    deity: 'Aphrodite',
-    title: 'Reconcile Desire and Form',
-    text: 'The golden goddess requires an accounting. Desire and practical form must be brought into accord. What you want is real and worth wanting — but only in the shape that can actually be held. Seek what is both true and beautiful.',
-    omen: 'neutral',
+    deity:      'Ἀπόλλων',
+    greek:      'Τὸ μεῖζον ἀγαθὸν νικᾷ τὸ ἔλαττον κακόν· πρόβαινε.',
+    text:       'The greater good overcomes the lesser ill. Go forward.',
+    omen:       'favorable',
   },
   '1,4,6,6': {
-    deity: 'Aphrodite',
-    title: 'The Golden Apple Falls for You',
-    text: 'Aphrodite\'s favor has landed in your court. Follow what your heart finds most beautiful — it will not lead you astray in this season. Love, creative work, and genuine connection are all blessed by this throw. Reach out.',
-    omen: 'favorable',
+    deity:      'Ζεύς',
+    greek:      'Εὐτυχὴς ἡ ἔκβασις· τίμα τοὺς θεοὺς πρὶν ἄρξῃ.',
+    text:       'The outcome is fortunate. Honor the gods before you begin.',
+    omen:       'very favorable',
   },
   '1,6,6,6': {
-    deity: 'Hermes',
-    title: "Fortune's Gate Swings Open",
-    text: 'Hermes stands at the threshold, grinning. What appears at first glance to be loss or misfortune is in fact the god opening a better gate than the one you were watching. Step through without grief for what you leave behind.',
-    omen: 'favorable',
+    deity:      'Ἀπόλλων',
+    greek:      'Κράτιστα πράξεις· ἀλλ\u02bc ἓν κρυπτὸν σφάλμα ὁρᾷ ὁ θεός.',
+    text:       'You will act splendidly; yet the god sees one hidden fault.',
+    omen:       'favorable',
   },
   '3,3,3,3': {
-    deity: 'Athena',
-    title: 'Four Equal Measures of Wisdom',
-    text: 'Four χῖος — a rare balance. Pure reason governs this moment. Athena asks that you study every angle of the situation before committing to any path. The answer is present and visible; it simply requires unhurried attention to find it.',
-    omen: 'favorable',
+    deity:      'Γῆ',
+    greek:      'Γῆς ἀγαθὰ λαμβάνεις· ἀλλ\u02bc οὐρανοῦ οὔπω ἐφάπτῃ.',
+    text:       'You receive the earth\'s goods; but you do not yet touch heaven.',
+    omen:       'favorable',
   },
   '3,3,3,4': {
-    deity: 'Athena',
-    title: 'The Answer Lies in Plain Sight',
-    text: 'The owl of Athena turns its gaze directly at something you have been overlooking. The strategy requires revision — not rebuilding, only refinement. The insight you need is not hidden from you; it waits where you have already looked.',
-    omen: 'favorable',
+    deity:      'Ἀπόλλων',
+    greek:      'Τὸ θεμέλιον ἰσχυρόν· ἐπὶ τούτου οἰκοδόμει.',
+    text:       'The foundation is strong. Build upon it.',
+    omen:       'favorable',
   },
   '3,3,3,6': {
-    deity: 'Aphrodite',
-    title: 'Closer Than You Believe',
-    text: 'Aphrodite smiles at your situation with great warmth. A union, reconciliation, or outcome of genuine beauty is far closer than you presently believe. Do not draw back from what wishes to come toward you.',
-    omen: 'favorable',
+    deity:      'Ἑρμῆς',
+    greek:      'Εὔφορος ἡ ὁδός· ἀγαθὸν σύμβολον ταῖς πορείαις.',
+    text:       'The road is favorable. A good sign for journeys.',
+    omen:       'favorable',
   },
   '3,3,4,4': {
-    deity: 'Hephaestus',
-    title: 'Raw Material Into Lasting Value',
-    text: 'The master of the forge recognizes patient craft. Your steady work is transforming raw and uncertain material into something of real and lasting value. The fire is at the right temperature. Keep working.',
-    omen: 'favorable',
+    deity:      'Τύχη',
+    greek:      'Ἰσορροπία νῦν κρατεῖ· καιρὸς τοῦ ἔχειν, οὐ τοῦ κινεῖν.',
+    text:       'Balance now prevails. A time for holding, not for moving.',
+    omen:       'neutral',
   },
   '3,3,4,6': {
-    deity: 'Hermes',
-    title: 'The Transaction Prospers',
-    text: 'Hermes, god of commerce and crossed roads, blesses this venture. Commerce, communication, travel, and exchange all move in your favor in this season. The deal, the journey, the negotiation — whichever applies — goes well.',
-    omen: 'favorable',
+    deity:      'Ἀπόλλων',
+    greek:      'Οἱ θεοὶ συγχωροῦσιν· ἄρξαι μὴ μέλλων.',
+    text:       'The gods permit it. Begin without delay.',
+    omen:       'favorable',
   },
   '3,3,6,6': {
-    deity: 'Hermes',
-    title: 'News Arrives at Speed',
-    text: 'The quick god is running toward you with news you have been waiting for. Be ready to move at equal speed when it arrives. Opportunities carried by Hermes stay open for only a moment. Do not still be preparing when he knocks.',
-    omen: 'favorable',
+    deity:      'Ζεύς',
+    greek:      'Ἄριστα ἕξει τὸ πρᾶγμα· καλῶς τελευτήσει.',
+    text:       'The matter will stand excellent and come to a good end.',
+    omen:       'very favorable',
   },
   '3,4,4,4': {
-    deity: 'Hermes',
-    title: 'Profit and Safe Passage',
-    text: 'Hermes, lord of fortunate encounters, throws his caduceus in your direction. The exchange you seek will be profitable; the road you contemplate is safe. Proceed with confidence — the quick god walks ahead of you.',
-    omen: 'favorable',
+    deity:      'Ζεύς',
+    greek:      'Τὰ δημόσια εὐοδεῖταί σοι· θάρσει.',
+    text:       'Public affairs go well for you. Be bold.',
+    omen:       'favorable',
   },
   '3,4,4,6': {
-    deity: 'Poseidon',
-    title: 'Change Carries You Forward',
-    text: 'Great waves rise, then fall — this is the sea\'s nature, and it is also yours. The changes occurring around you are not disasters to be survived but currents to be ridden. Poseidon moves you toward new shore.',
-    omen: 'favorable',
+    deity:      'Ἀπόλλων',
+    greek:      'Ἡ ἐπιμέλεια νῦν πολὺ κερδαίνει· πράσσε.',
+    text:       'Diligence now yields much. Act.',
+    omen:       'favorable',
   },
   '3,4,6,6': {
-    deity: 'Apollo',
-    title: 'Harmony Is Restored',
-    text: 'Apollo\'s lyre sounds clearly over the noise of your situation. Harmony returns — what was discordant finds resolution, what was scattered finds form. Trust the rhythm of events. The music beneath the difficulty is beautiful.',
-    omen: 'favorable',
+    deity:      'Ζεύς',
+    greek:      'Νέον ἔργον ἀρξάμενος νῦν θαλήσει.',
+    text:       'A new undertaking begun now will flourish.',
+    omen:       'very favorable',
   },
   '3,6,6,6': {
-    deity: 'Zeus',
-    title: 'Seek the Highest',
-    text: 'The Olympian leans forward on his throne. His word: do not settle for less than what you truly desire. Seek the highest version of what is possible here and pursue it without apology. The father approves the full ambition.',
-    omen: 'very favorable',
+    deity:      'Ἀφροδίτη',
+    greek:      'Ἐγγὺς ἡ Ἀφροδίτη· μεγάλη εὐτυχία παρ\u02bc ὀλίγον σοί.',
+    text:       'Aphrodite is near. Great fortune is very close to you.',
+    omen:       'very favorable',
   },
   '4,4,4,4': {
-    deity: 'Apollo',
-    title: 'Complete Illumination',
-    text: 'Four πλευρός — Apollo\'s light falls on your situation without shadow or obscurity. All shall become clear. The answer you have been seeking will arrive with the sun. Prepare to see with full clarity what has been hidden.',
-    omen: 'very favorable',
+    deity:      'Ζεύς',
+    greek:      'Πᾶν ὀρθόν· ἡ ἀξία σε σῴζει. πράσσε τὰ τῆς τιμῆς.',
+    text:       'All is upright. Honor preserves you. Attend to matters of dignity.',
+    omen:       'very favorable',
   },
   '4,4,4,6': {
-    deity: 'Apollo',
-    title: 'Truth Heals',
-    text: 'The Far-Shooter\'s arrow finds its mark. The truth you have been holding back — from yourself or from another — must now be spoken. Apollo is the god of both prophecy and healing: the disclosure and the cure arrive together.',
-    omen: 'very favorable',
+    deity:      'Ζεύς',
+    greek:      'Γενναῖος ὁ κλῆρος· ἡ ἐρώτησις περὶ τιμῆς· ναί.',
+    text:       'A noble cast. The question touches on honor. The answer is yes.',
+    omen:       'very favorable',
   },
   '4,4,6,6': {
-    deity: 'Zeus',
-    title: 'The Way Is Cleared',
-    text: 'Thunder and lightning clear the road ahead of you. What has been blocking your path dissolves now by divine will — not by force of your own effort alone, but because the gods have decided. Walk forward without hesitation.',
-    omen: 'very favorable',
+    deity:      'Ἑρμῆς',
+    greek:      'Ἐγγὺς τὸ τέλειον· ὁ Ἑρμῆς σοὶ σύνεστιν.',
+    text:       'The perfect is near. Hermes is with you.',
+    omen:       'very favorable',
   },
   '4,6,6,6': {
-    deity: 'Zeus',
-    title: 'An Ally Stands Ready',
-    text: 'The father of gods extends protection over your cause. A powerful ally — seen or as yet unseen — stands ready to assist you. You do not pursue this alone. Look to whom has already offered help and accept it without pride.',
-    omen: 'very favorable',
+    deity:      'Ἀφροδίτη',
+    greek:      'Βῆμα ἓν μόνον πρὸ τῆς Ἀφροδίτης· μεγάλη ἀγαθὴ τύχη σοι ἐγγιστα.',
+    text:       'One step before the Aphrodite. Great good fortune is at hand.',
+    omen:       'very favorable',
   },
   '6,6,6,6': {
-    deity: 'Zeus',
-    title: 'The Highest Throw',
-    text: 'Four ὕπτιος — the rarest and most blessed cast. Zeus himself has pronounced judgment. What you seek is granted by divine will. Move forward without hesitation, without doubt, without looking back. The gods are with you entirely.',
-    omen: 'very favorable',
+    deity:      'Ἀφροδίτη',
+    named:      'Ἀφροδίτη — The Hexas',
+    greek:      'Ἄριστος ὁ κλῆρος· ἡ θεὸς πάντα σοὶ δίδωσιν· πράσσε εὐθύς.',
+    text:       'The cast is supreme. The goddess gives you all things. Act at once.',
+    omen:       'supreme',
   },
 };
 
-/* ── Face data ───────────────────────────────────────────── */
+/* ── Face data (Pollux 9.100–101; Eustathius 1289.58) ───── */
 const FACES = [
-  { value: 1, greek: 'κ',  name: 'κῷος'    },
-  { value: 3, greek: 'χ',  name: 'χῖος'    },
-  { value: 4, greek: 'π',  name: 'πλευρός' },
-  { value: 6, greek: 'υ',  name: 'ὕπτιος'  },
+  { value: 1, greek: 'χ',  name: 'χῖος'   },   // narrow flat — lowest value
+  { value: 3, greek: 'π',  name: 'πρανής' },   // broad concave (belly)
+  { value: 4, greek: 'υ',  name: 'ὑπτία'  },   // broad convex (back)
+  { value: 6, greek: 'κ',  name: 'κῷος'   },   // narrow indented — highest value
 ];
 
 function randomFace() {
@@ -269,7 +269,7 @@ function castBones() {
 
   const rolls = [randomFace(), randomFace(), randomFace(), randomFace()];
 
-  bonesArena.textContent = ''; // clear previous bones (safe, no innerHTML)
+  bonesArena.textContent = '';
 
   rolls.forEach((face, i) => {
     const bone = createBoneEl(face, i);
@@ -286,7 +286,6 @@ function castBones() {
     });
   });
 
-  // show oracle after last bone settles
   const delay = (0.18 * 3 + 0.9 + 0.35) * 1000;
   setTimeout(() => showOracle(rolls), delay);
 }
@@ -299,17 +298,22 @@ function showOracle(rolls) {
   if (!entry || !oracleResult) return;
 
   const deityEl = oracleResult.querySelector('.oracle-deity');
-  const titleEl = oracleResult.querySelector('.oracle-title');
+  const namedEl = oracleResult.querySelector('.oracle-named');
+  const greekEl = oracleResult.querySelector('.oracle-greek');
   const textEl  = oracleResult.querySelector('.oracle-text');
   const sumEl   = oracleResult.querySelector('.oracle-sum');
 
-  if (deityEl) deityEl.textContent = 'Under the aegis of ' + entry.deity;
-  if (titleEl) titleEl.textContent = entry.title;
+  if (deityEl) deityEl.textContent = entry.deity;
+  if (namedEl) {
+    namedEl.textContent = entry.named || '';
+    namedEl.style.display = entry.named ? 'block' : 'none';
+  }
+  if (greekEl) greekEl.textContent = entry.greek;
   if (textEl)  textEl.textContent  = entry.text;
 
   const sum       = sorted.reduce((a, b) => a + b, 0);
   const faceNames = sorted.map(v => FACES.find(f => f.value === v).name).join(' \u00b7 ');
-  if (sumEl) sumEl.textContent = faceNames + '  \u00b7  sum ' + sum + '  \u00b7  omen: ' + entry.omen;
+  if (sumEl) sumEl.textContent = faceNames + '  \u00b7  sum\u00a0' + sum + '  \u00b7  ' + entry.omen;
 
   oracleResult.classList.add('revealed');
 

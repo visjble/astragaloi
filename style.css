@@ -509,20 +509,28 @@ blockquote.ancient-quote cite {
 
 .oracle-deity {
   font-family: 'Cormorant SC', serif;
-  font-size: 0.75rem;
-  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  letter-spacing: 0.22em;
   color: var(--gold-dim);
-  text-transform: uppercase;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.3em;
 }
 
-.oracle-title {
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: var(--gold);
-  font-style: italic;
+.oracle-named {
+  font-family: 'Cormorant SC', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  color: var(--terra);
   margin-bottom: 1rem;
-  line-height: 1.25;
+  display: block;
+}
+
+.oracle-greek {
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold);
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
 }
 
 .oracle-text {
